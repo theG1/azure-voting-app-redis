@@ -18,7 +18,12 @@ else:
 if ("VOTE2VALUE" in os.environ and os.environ['VOTE2VALUE']):
     button2 = os.environ['VOTE2VALUE']
 else:
-    button2 = app.config['VOTE2VALUE']
+    button2 = app.config['VOTE3VALUE']
+    
+if ("VOTE3VALUE" in os.environ and os.environ['VOTE3VALUE']):
+    button3 = os.environ['VOTE3VALUE']
+else:
+    button3 = app.config['VOTE3VALUE']
 
 if ("TITLE" in os.environ and os.environ['TITLE']):
     title = os.environ['TITLE']
